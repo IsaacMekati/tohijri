@@ -37,4 +37,8 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
-          server-dir: ./public_html/
+          # Dossier du sous-domaine tohijri.kawwwa.fr sur Hostinger.
+          # À vérifier/ajuster dans hPanel (Fichiers → Gestionnaire de fichiers
+          # ou Comptes FTP) : le chemin exact dépend de la façon dont
+          # kawwwa.fr est configuré sur l'hébergement.
+          server-dir: ./public_html/tohijri/
